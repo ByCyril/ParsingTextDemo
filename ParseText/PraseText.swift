@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import NaturalLanguage
 
 enum ProblemType {
     case part
@@ -26,6 +27,7 @@ extension String  {
 
 /*
  
+ We surveyed 50 people and 14% disliked ice cream. How many people liked ice cream? - whole
  What is 25% of 40 - whole
  5 is 20% of what number - part
  
@@ -34,6 +36,22 @@ extension String  {
 final class ParseText {
     
     func parse(_ text: String) -> [NumberComponent] {
+        
+        guard let mlModel = try? PercentageTypePredictor(configuration: .init()).model else { return [] }
+
+        guard let typePredictor = try? NLModel(mlModel: mlModel) else { return [] }
+        
+        var type: ProblemType?
+        let pred = typePredictor.predictedLabel(for: text) ?? "na"
+        
+        switch pred {
+        case "whole":
+            type = .whole
+        case "part":
+            type = .part
+        default:
+            type = nil
+        }
         
         var components: [NumberComponent] = []
         
@@ -50,7 +68,7 @@ final class ParseText {
             }
             
             if let num = Double(word) {
-                components.append(NumberComponent(value: num, type: .whole))
+                components.append(NumberComponent(value: num, type: type!))
             }
             
         }

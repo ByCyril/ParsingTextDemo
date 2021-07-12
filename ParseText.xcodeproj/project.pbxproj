@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0130EFB9269CFB9F00DC5777 /* PercentageTypePredictor.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0130EFB8269CFB9F00DC5777 /* PercentageTypePredictor.mlmodel */; };
 		01779074269A2D200098A139 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01779073269A2D200098A139 /* main.swift */; };
 		0177907B269A2D2D0098A139 /* PraseText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0177907A269A2D2D0098A139 /* PraseText.swift */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0130EFB8269CFB9F00DC5777 /* PercentageTypePredictor.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = PercentageTypePredictor.mlmodel; sourceTree = "<group>"; };
 		01779070269A2D200098A139 /* ParseText */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ParseText; sourceTree = BUILT_PRODUCTS_DIR; };
 		01779073269A2D200098A139 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		0177907A269A2D2D0098A139 /* PraseText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PraseText.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 		01779072269A2D200098A139 /* ParseText */ = {
 			isa = PBXGroup;
 			children = (
+				0130EFB8269CFB9F00DC5777 /* PercentageTypePredictor.mlmodel */,
 				01779073269A2D200098A139 /* main.swift */,
 				0177907A269A2D2D0098A139 /* PraseText.swift */,
 			);
@@ -124,6 +127,7 @@
 			files = (
 				0177907B269A2D2D0098A139 /* PraseText.swift in Sources */,
 				01779074269A2D200098A139 /* main.swift in Sources */,
+				0130EFB9269CFB9F00DC5777 /* PercentageTypePredictor.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
