@@ -1,0 +1,81 @@
+[
+    {
+        "text": "A student earned a grade of 80% on a math test that had 20 problems. How many problems on this test did the student answer correctly?",
+        "label": "whole"
+    }, {
+        "text": "A metal bar weighs 8.15 ounces. 93% of the bar is silver. How many ounces of silver are in the bar? ",
+        "label": "whole"
+    }, {
+        "text": "What is 5% of 20",
+        "label": "whole"
+    }, {
+        "text": "A student answered 86 problems on a test correctly and received a grade 98%.",
+        "label": "whole"
+    }, {
+        "text": "Ben earns $12,800 a year. About 15% is taken out for taxes. How much is taken out for taxes?",
+        "label": "whole"
+    }, {
+        "text": "At a sale, shirts were sold for $15 each. This price was 80% of their original price. What was the original price?",
+        "label": "part"
+    }, {
+        "text": "A student answered 86 problems on a test correctly and received a grade 98%. How many problems were on the test, if all the problems were worth the same number of points?",
+        "label": "part"
+    }, {
+        "text": "Pamela bought an electric drill at 85% of the regular price. She paid $32.89 for the drill. What was the regular price?",
+        "label": "part"
+    }, {
+        "text": "A crew is made up of 8 men; the rest are women. 66% of the crew are men. How many people are in the crew?",
+        "label": "part"
+    }, {
+        "text": "5 is 12% of what number?",
+        "label": "part"
+    }, {
+        "text": "My new speakers were $154.99 but I also had to pay 6% tax. How much did I pay for my new speakers?",
+        "label": "whole"
+    }, {
+        "text": "My shoes were only $49.50 but I also had to pay 4% tax. What was my total?",
+        "label": "whole"
+    }, {
+        "text": "Jacob picked 54 good apples, which is 61% of all apples he picked. How many apples did Jacob picked?",
+        "label": "part"
+    }, {
+        "text": "A truck picked 5012 apples and 12% of them are bad. How many bad apples are there?",
+        "label": "whole"
+    }, {
+        "text": "A truck picked 5012 apples and 12% of them are bad. How many bad apples are there?",
+        "label": "whole"
+    }, {
+        "text": "Michael found 12 broken chairs, which is 50% of all chairs. How many chairs are there?",
+        "label": "part"
+    }, {
+        "text": "Kevins battery has 41kwh left which is only 71% of the entire battery. How much battery does kevin have?",
+        "label": "part"
+    }, {
+        "text": "Kevin bought a camera for $593.67 with 7.95% in tax. How much was the camera before tax?",
+        "label": "whole"
+    }, {
+        "text": "My Tesla has 350 miles of range but Tesla recommends that I charge it up to 80% every night to preserve its battery. How many miles do I get?",
+        "label": "whole"
+    }, {
+        "text": "Kevin scored a 97% on an exam that had 100 problems. How many problems did he get right?",
+        "label": "whole"
+    }, {
+        "text": "Kobe shot 50 times from the field in 44% shooting. How many field goles did he make?",
+        "label": "whole"
+    }, {
+        "text": "A truck can carry a maximum load of 1000 pounds and it's cargo is only at 80% capacity. How many more pounds is the truck currently carrying?",
+        "label": "whole"
+    }, {
+        "text": "A truck is carrying 881 punds at 76% capacity. How many pounds can the truck carry in total?",
+        "label": "part"
+    }, {
+        "text": "At a coffee shop, drinks are being sold at $4.99 each which is 20% of its original price. What is the original price?",
+        "label": "part"
+    }, {
+        "text": "There are 241 pages in this book and I've only read through 41% of it. How many pages have I read through?",
+        "label": "whole"
+    }, {
+        "text": "I've read the first 142 pages, which is only 80% of the book. How many pages does this book have?",
+        "label": "part"
+    }
+]
