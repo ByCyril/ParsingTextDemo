@@ -19,30 +19,24 @@ struct NumberComponent {
     var type: ProblemType
 }
 
-extension String  {
-    var isNumber: Bool {
-        return !isEmpty && rangeOfCharacter(from: CharacterSet.decimalDigits.inverted) == nil
-    }
-}
-
-/*
- 
- We surveyed 50 people and 14% disliked ice cream. How many people liked ice cream? - whole
- What is 25% of 40 - whole
- 5 is 20% of what number - part
- 
- */
-
 final class ParseText {
     
+    var nlModel: NLModel?
+    
+    init() {
+        do {
+            let model = try PercentageTypePredictor(configuration: .init()).model
+            nlModel = try NLModel(mlModel: model)
+        } catch {
+            print("Error", error.localizedDescription)
+        }
+    }
+ 
     func parse(_ text: String) -> [NumberComponent] {
         
-        guard let mlModel = try? PercentageTypePredictor(configuration: .init()).model else { return [] }
-
-        guard let typePredictor = try? NLModel(mlModel: mlModel) else { return [] }
-        
         var type: ProblemType?
-        let pred = typePredictor.predictedLabel(for: text) ?? "na"
+        
+        let pred = nlModel?.predictedLabel(for: text) ?? "na"
         
         switch pred {
         case "whole":
